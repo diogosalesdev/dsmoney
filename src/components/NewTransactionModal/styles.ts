@@ -2,6 +2,20 @@ import styled from "styled-components";
 import { darken, transparentize } from 'polished';
 
 export const Container = styled.form`
+  .react-modal-close {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    border: 0;
+    background: transparent;
+    
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+
   h2 {
     color: var(--text-title);
     font-size: 1.5rem;
@@ -47,20 +61,7 @@ export const Container = styled.form`
       filter: brightness(0.9);
     }
   }
-
-  .react-modal-close {
-    position: absolute;
-    right: 1.5rem;
-    top: 1.5rem;
-    border: 0;
-    background: transparent;
-    
-    transition: filter 0.2s;
-
-    &:hover {
-      filter: brightness(0.8);
-    }
-  }
+  
 `;
 
 export const TransactionTypeContainer = styled.div`

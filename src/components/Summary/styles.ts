@@ -26,8 +26,14 @@ export const Container = styled.div`
     line-height: 3rem;
   }
 
-  &.highlight-background {
+  .highlight-background {
     background: var(--green);
     color: #fff;
+  }
+
+  @media (max-width: 1080px) {
+    strong {
+      font-size: 1.5rem;
+    }
   }
 `;
